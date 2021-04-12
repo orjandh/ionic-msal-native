@@ -5,21 +5,22 @@
     "stripInternal": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "importHelpers": true,
     "noImplicitAny": true,
-    "module": "es2015",
+    "module": "es2020",
     "moduleResolution": "node",
     "outDir": "./dist",
     "rootDir": "src",
-    "target": "es5",
+    "target": "es2015",
     "skipLibCheck": true,
-    "lib": ["es2017", "dom"],
+    "lib": ["es2018", "dom"],
     "inlineSources": true,
     "inlineSourceMap": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.spec.ts"],
   "angularCompilerOptions": {
-    "genDir": "aot"
+    "enableIvy": false
   },
   "plugins": [{ "name": "typescript-tslint-plugin" }]
 }
